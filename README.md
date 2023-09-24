@@ -5,6 +5,14 @@
 
 Here are some ideas to get you started:
 
+- Name: Vincent Joshua A. Trinidad
+- Email Address: jupitervjat@gmail.com
+- My Github account's username is dadanch and is created on September 24, 2023.
+- My repository's name is dadanch.github.io.
+- Steps for downloading the repository to my computer:
+	- I clicked on the file tab on the top left and selected clone repository, then I chose which repository to clone.
+	- I created a folder in my Desktop to store the cloned file in.
+
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
