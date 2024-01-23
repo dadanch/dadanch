@@ -4,10 +4,11 @@
     <p1>Name: Vincent Joshua A. Trinidad<br></p1>
     <p2>Email Address: vatrinidad@my.waketech.edu<br></p2>
     <p3>College Major: Computer Science</p3>
-    <p4>id="results"</p4>
-    <script>
-      document.alert(<p1>"Coding with JavaScript"</p1>;
+    <p4 id="results"</p4>
+    <script type="text/javascript">
+      alert("Coding with JavaScript");
       document.getElementById("results").innerHTML = "JavaScript is Cool";
+      document.body.style.color = "red";
     </script>
   </body>
 </html>
