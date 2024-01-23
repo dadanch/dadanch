@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <p1>"Name: Vincent Joshua A. Trinidad<br>"</p1>
-    <p2>"Email Address: vatrinidad@my.waketech.edu<br>"</p2>
-    <p3>"College Major: Computer Science"</p3>
+    <p1>Name: Vincent Joshua A. Trinidad<br></p1>
+    <p2>Email Address: vatrinidad@my.waketech.edu<br></p2>
+    <p3>College Major: Computer Science</p3>
+    //<p4>id="results"</p4>
+    <script>
+      document.alert(<p1>"Coding with JavaScript"</p1>;
+    </script>
   </body>
 </html>
