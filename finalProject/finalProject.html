@@ -2,10 +2,83 @@
 <html>
 <head>
 <title>WEB-115 Final Project</title>
+<meta charset="UTF-8">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
+
 body {
 background-image: url('healthymeal.jpg');
 }
+
+h2{
+    text-align:center;
+    font-size:40px;
+}
+  
+button{
+    cursor: pointer;
+}
+  
+input[type=text]{
+    width:100%;
+    padding:15px;
+}
+  
+input[type=button]{
+    margin:auto;
+    left:38%;
+    position:absolute;
+    padding:5px;
+    cursor:pointer;
+}
+  
+.center{
+    margin:auto;
+    position:absolute;
+    left:38%;
+    padding:20px;
+}
+  
+.container{
+    max-width:500px;
+    margin:auto;
+    position:relative;
+    background:#FAF9F6;
+    border:2px solid black;
+    border-radius:12px;
+  }
+  
+.slide_inner{
+    min-height:650px;
+    margin:auto;
+    position:relative;
+}
+  
+.slide_holder .slide_inner{
+    background:#FAF9F6;
+    border-radius:12px;
+}
+  
+.slide_content{
+    max-width:400px;
+    width: 100%;
+    padding:30px;
+    margin:auto;
+    border-radius:12px;
+}
+
+.slide1{
+    padding:30px;
+    font-size:20px;
+}
+  
+  
 </style>
 </head>
 <body>
@@ -16,5 +89,176 @@ background-image: url('healthymeal.jpg');
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGDLeMJLLA&#x2F;6G6Al9FR1p8klijIg77Dow&#x2F;view?embed">
   </iframe>
 </div>
+<div class="container">
+  <div class="slider_wrapper">
+    
+    <div class="slider_inner">
+
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2 style="text-align:center; font-size:40px;">Tell us about yourself!</h2>
+	     <p style="text-align:center; font-size:17px;">This meal plan will cover seven days of the week, and will include breakfast, snack, lunch, snack, and dinner. Before you begin planning, please type in your full name and email address in the text box below! Please also type in your goals for the week when creating this meal plan!</p>
+            <form id="myForm">
+              <div class=slide1>
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName"><br><br>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="email"><br><br>              
+                <label for="goals">Lifestyle Goals:</label><br>
+                <textarea id="goals" style="height:100px; width:100%;"></textarea>
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Sunday</h2>
+            <form id="myForm">
+              <div class=slide2>
+                <label for="breakfast1">Breakfast:</label><br>
+                <input type="text" id="breakfast1"><br><br>
+                <label for="snack1">Snack:</label><br>
+                <input type="text" id="snack1"><br><br>              
+                <label for="lunch1">Lunch:</label><br>
+                <input type="text" id="lunch1"><br><br>
+                <label for="snack2">Snack:</label><br>
+                <input type="text" id="snack2"><br><br>
+                <label for="dinner1">Dinner:</label><br>
+                <input type="text" id="dinner1">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Monday</h2>
+            <form id="myForm">
+              <div class=slide3>
+                <label for="breakfast2">Breakfast:</label><br>
+                <input type="text" id="breakfast2"><br><br>
+                <label for="snack3">Snack:</label><br>
+                <input type="text" id="snack3"><br><br>              
+                <label for="lunch2">Lunch:</label><br>
+                <input type="text" id="lunch2"><br><br>
+                <label for="snack4">Snack:</label><br>
+                <input type="text" id="snack4"><br><br>
+                <label for="dinner2">Dinner:</label><br>
+                <input type="text" id="dinner2">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Tuesday</h2>
+            <form id="myForm">
+              <div class=slide4>
+                <label for="breakfast3">Breakfast:</label><br>
+                <input type="text" id="breakfast3"><br><br>
+                <label for="snack5">Snack:</label><br>
+                <input type="text" id="snack5"><br><br>              
+                <label for="lunch3">Lunch:</label><br>
+                <input type="text" id="lunch3"><br><br>
+                <label for="snack6">Snack:</label><br>
+                <input type="text" id="snack6"><br><br>
+                <label for="dinner3">Dinner:</label><br>
+                <input type="text" id="dinner3">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Wednesday</h2>
+            <form id="myForm">
+              <div class=slide5>
+                <label for="breakfast4">Breakfast:</label><br>
+                <input type="text" id="breakfast4"><br><br>
+                <label for="snack7">Snack:</label><br>
+                <input type="text" id="snack7"><br><br>              
+                <label for="lunch4">Lunch:</label><br>
+                <input type="text" id="lunch"><br><br>
+                <label for="snack8">Snack:</label><br>
+                <input type="text" id="snack8"><br><br>
+                <label for="dinner4">Dinner:</label><br>
+                <input type="text" id="dinner4">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Thursday</h2>
+            <form id="myForm">
+              <div class=slide6>
+                <label for="breakfast5">Breakfast:</label><br>
+                <input type="text" id="breakfast5"><br><br>
+                <label for="snack9">Snack:</label><br>
+                <input type="text" id="snack9"><br><br>              
+                <label for="lunch5">Lunch:</label><br>
+                <input type="text" id="lunch5"><br><br>
+                <label for="snack10">Snack:</label><br>
+                <input type="text" id="snack10"><br><br>
+                <label for="dinner5">Dinner:</label><br>
+                <input type="text" id="dinner5">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Friday</h2>
+            <form id="myForm">
+              <div class=slide7>
+                <label for="breakfast6">Breakfast:</label><br>
+                <input type="text" id="breakfast6"><br><br>
+                <label for="snack11">Snack:</label><br>
+                <input type="text" id="snack11"><br><br>              
+                <label for="lunch6">Lunch:</label><br>
+                <input type="text" id="lunch6"><br><br>
+                <label for="snack12">Snack:</label><br>
+                <input type="text" id="snack12"><br><br>
+                <label for="dinner6">Dinner:</label><br>
+                <input type="text" id="dinner6">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+      <div class="slide_holder">
+        <div class="slide_inner">
+          <div class="slide_content">
+            <h2>Saturday</h2>
+            <form id="myForm">
+              <div class=slide8>
+                <label for="breakfast7">Breakfast:</label><br>
+                <input type="text" id="breakfast7"><br><br>
+                <label for="snack13">Snack:</label><br>
+                <input type="text" id="snack13"><br><br>              
+                <label for="lunch7">Lunch:</label><br>
+                <input type="text" id="lunch7"><br><br>
+                <label for="snack14">Snack:</label><br>
+                <input type="text" id="snack14"><br><br>
+                <label for="dinner7">Dinner:</label><br>
+                <input type="text" id="dinner7"><br><br>
+                <input type="button" id="myButton" value="Create Meal Planner">
+              </div>
+          </div>
+        </div>
+      </div> <!--slide_holder-->
+    </div>
+    <div class="center">
+      <button class="button prev">Prev</button>
+      <button class="button next">Next</button>
+    </div>
+  </div>
+</div>
+<script src="testProjectjquery.js"></script>
 </body>
 </html>
